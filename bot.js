@@ -132,6 +132,30 @@ client.on("message", async message => {
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
+   if (command === "announce") {
+     if (message.member.hasPermission("ADMINISTRATOR")) {
+      let args = message.content.split(" ").slice(1).join(" ");
+   let split = args.split("-");
+   let url = args[2];
+       message.channel.sendMessage("@everyone", {
+         embed: {
+           color: 0xFFFF00,
+           author: {
+             name: message.author.username,
+             icon_url: message.author.avatarURL
+           },
+           title: ":information_source: Announcement",
+           description: split[0],
+           url: split[1],
+           timestamp: new Date(),
+           footer: {
+             icon_url: message.author.avatarURL,
+             text: message.author.username
+           }
+         }
+     });
+   }
+ }
 });
 
 client.login(config.token);
