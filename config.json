@@ -1,12 +1,12 @@
 {
 	"discord": {
 		"bot-user": {
-			"username": "BOT_USERNAME#NNNN",
-			"token": "BOT_ACCESS_TOKEN"
+			"username": "ArcticCAD Support#9352",
+			"token": "NDg3Njg4NDg2MzY3OTIwMTM5.DogZEw.PANNMiOuHpr0l27vtISUqNqybyI"
 		},
 		"client": {
-			"id": "CLIENT_ID",
-			"secret": "CLIENT_SECRET"
+			"id": "487688486367920139",
+			"secret": "etKQed1VwJml5XLHnKF2hkpCvri03jvP"
 		}
 	},
 	"greeting": "Hi everyone! I'm a help ticket bot, here to connect you and your questions to someone who can answer them. If you have any questions on how to use my functions, use `tic^help`.\n\nよろしくお願いします~",
